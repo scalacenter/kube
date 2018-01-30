@@ -4,54 +4,70 @@
 
 <div id="main">
   <div id="hero">
-    <img alt="bloop-logo" width="20%" style="padding-bottom: 30px;" src="{{ "/img/logo.svg" | relURL }}">
+    <figure>
+      <img alt="bloop-logo" width="20%" src="{{ "/img/logo.svg" | relURL }}">
+    </figure>
     <h1>{{.Title}}</h1>
     <p>{{.Description}}</p>
   </div>
   <div id="action-buttons">
-    <a class="button primary big" href="{{ .Site.Params.githubURL }}/releases" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Download</a> <a class="button outline big" href="{{ .Site.Params.githubURL }}" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on Github</a>
+    <a class="button primary big" href="{{ .Site.Params.githubURL }}/releases" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Download</a>
+    <a class="button outline big" href="{{ .Site.Params.githubURL }}" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on Github</a>
     <p>Zip-archive, includes all the source and site example files</p>
   </div>
+  <!-- 
   <div class="message focus" data-component="message"> <span class="close small"></span>
     <a class="button inverted small " href="https://imperavi.com/kube/" >Kube </a> from <a href="https://imperavi.com/">imperavi</a> is an awesome <mark>CSS & JS Framework</mark> and i designed this template for <a href="https://gohugo.io">hugo</a> with the same original philosophy !
   </div>
+  -->
   <div id="kube-features">
     <div class="row gutters">
       <div class="col col-4 item">
         <figure>
-          <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
+          <img alt="Lightning" class="desaturate" height="75" src="{{ "/img/frontpage/lightning.png" | relURL }}" width="75">
         </figure>
-        <h3>Horizontal Rhythm</h3>
-        <p>In Kube horizontal rhythm based on a 4px vertical grid is something that we are truly proud of.</p>
+        <h3>Snappy</h3>
+        <p>
+          Bloop has a focus on speed to minimize the amount of time that happens between you write your changes and your application
+          runs.
       </div>
       <div class="col col-4 item">
         <figure>
-          <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
+          <img alt="Hammer" class="desaturate" height="80" src="{{ "/img/frontpage/hammer.png" | relURL }}" width="80">
         </figure>
-        <h3>Typography</h3>
-        <p>We obsess over typography, and it shows throughout Kube.</p>
+        <h3>Cross build tool</h3>
+        <p>Bloop integrates with established JVM build tools like Maven, Gradle, sbt and Bazel to provide a full Scala developer
+          experience.</p>
       </div>
       <div class="col col-4 item">
         <figure>
-          <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
+          <img alt="Hot flame" class="desaturate" height="80" src="{{ "/img/frontpage/hot.png" | relURL }}" width="80">
         </figure>
-        <h3>Minimalism</h3>
-        <p>We strongly believe in minimalism as a general concept as well as a practical approach to everyday life.</p>
+        <h3>Hot</h3>
+        <p>
+          Bloop shares hot compilers with all of your IDEs and build tools to provide the fastest compilation possible.
+        </p>
       </div>
     </div>
     <div class="row gutters">
       <div class="col col-4 item">
-        <h4>Mobile-first Design</h4>
-        <p>Every element in kube is mobile-first and fully embraces latest and greatest tech.</p>
+        <h4>Runtime independent</h4>
+        <p>
+          Test or run your Scala application on the JVM, <a href="https://www.scala-js.org/">Scala.js</a> and <a href="http://www.scala-native.org/en/latest/">Scala Native</a>.
+        </p>
       </div>
       <div class="col col-4 item">
-        <h4>Cross-browser</h4>
-        <p>Kube works in all modern browsers, both desktop and mobile, including latest Chrome, Firefox, Safari, Opera, IE and Edge.</p>
+        <h4>Concurrent</h4>
+        <p>
+          Bloop supports concurrent users to minimize workflow restrictions. Test one project while you compile another one!
+        </p>
       </div>
       <div class="col col-4 item">
-        <h4>License</h4>
-        <p>Kube licensed under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>
-      Kube Framework is absolutely free for personal or commercial use.</p>
+        <h4>A Scala Center tool</h4>
+        <p>
+          Bloop is brought to you with love by the Scala Center under an
+          <a href="https://opensource.org/licenses/Apache-2.0">Apache 2.0</a> license.
+      </div>
     </div>
   </div>
 </div>
