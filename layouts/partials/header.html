@@ -1,13 +1,13 @@
 <div class="show-sm">
     <div id="nav-toggle-box">
       <div id="nav-toggle-brand">
-        <a href="/">{{ .Site.Title }}</a>
+        <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
       </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
     </div>
   </div>
   <div class="hide-sm" id="top">
     <div id="top-brand">
-      <a href="/" title="{{ .Site.Title }}">
+      <a href="{{ "/" | relURL }}" title="{{ .Site.Title }}">
         <img alt="bloop-logo" width="40px" src="{{ "/img/logo.svg" | relURL }}">
       </a>
     </div>
