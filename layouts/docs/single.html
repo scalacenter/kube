@@ -12,6 +12,8 @@
     <div id="kube-component" class="content">
     {{ partial "toc" .}}
 
+    {{ partial "edit-on-github" . }}
+
     {{ .Content}}
 <!-- Inject script tag in this template  -->
     {{if .Params.script}}
