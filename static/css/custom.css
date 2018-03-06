@@ -32,3 +32,7 @@ pre code {
   -moz-appearance: none;
   padding: 5px 5px 5px 29px;
 }
+
+#top #top-nav-extra .algolia-autocomplete {
+  font-size: 16px;
+}
