@@ -21,6 +21,13 @@
     </nav>
     <nav id="top-nav-extra"> 
       <ul>
+          <li>
+            <form class="form">
+              <div class="form-item">
+                <input type="text" id="bloop-search" id="bloop-search-input" placeholder="Search in docs">
+              </div>
+            </form>
+          </li>
         {{ range .Site.Menus.extra }} 
           <li>
             <a class="button secondary outline" href="{{ .URL }}">{{ .Name }}</a>
